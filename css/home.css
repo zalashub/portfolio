@@ -320,11 +320,10 @@
 }
 
 .about_text {
-  max-width: 700px;
-  min-width: 300px;
   width: 60%;
   color:rgba(240, 240, 241, 0.9);
-  font-size: 1.05rem;
+  font-size: 1.15rem;
+  font-family: Theano-Old-Style;
 }
 
 .about_illustration {
@@ -340,7 +339,7 @@
 @media (max-width: 480px) {
   .about_hero {
     width: 90%;
-    margin: 4rem 1rem 1rem 1rem;
+    margin: 4rem 1rem 1rem 1.3rem;
   }
 
   .about_hero > h1 {
@@ -348,13 +347,13 @@
   }
 
   .about_cont {
-    margin: 0px 1rem;
+    margin: 0px 1.3rem;
   }
 
   .about_text {
-    font-size: 0.80rem;
+    font-size: 0.90rem;
     width: 100%;
-    min-width: 180px;
+    margin: auto;
   }
 
   .about_illustration {
