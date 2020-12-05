@@ -296,6 +296,47 @@
   margin: 10px 0.5%;
 }
 
+/* Writings section */
+#blog {
+  margin: 20px 10px 0px 10px;
+  padding: 40px;
+}
+
+#blog > h2 {
+  text-align: center;
+  margin: 50px 0 23px 0;
+  font-size: 2rem;
+}
+
+.blogBrief {
+  width: 80%;
+  margin: 0px auto 50px auto;
+  text-align: center;
+  color:rgba(240, 240, 241, 0.6)
+}
+
+.ramblingsList {
+  margin: auto;
+  text-align: center;
+}
+
+.ramblingsList ul {
+  margin: auto;
+  list-style-type: none;
+  font-family: Theano-Old-Style;
+  font-size: 1.15rem;
+  padding: 0;
+}
+
+.ramblingsList a {
+  text-decoration: none;
+  color: white;
+}
+
+.ramblingsList a:hover {
+  color: rgba(130, 233, 252, 0.959);
+}
+
 @media (max-width: 700px) {
   .play_cont img {
     width: 100%;

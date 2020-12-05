@@ -45,16 +45,19 @@ $(document).ready(function() {
       $('section').each(function(){
           if ($(this).offset().top < window.pageYOffset + 10 && $(this).offset().top + $(this).height() > window.pageYOffset + 10){
             // window.location.hash = $(this).attr('id');
-              if($(this).attr('id') == "projects"){
-                  $('a.top_nav_link').removeClass('selected');
-                  $("#nav1").toggleClass('selected')
-              } else if($(this).attr('id') == "play"){
-                  $('a.top_nav_link').removeClass('selected');
-                  $("#nav2").toggleClass('selected')
-              } else if($(this).attr('id') == "about"){
-                  $('a.top_nav_link').removeClass('selected');
-                  $("#nav3").toggleClass('selected')
-              }
+            if($(this).attr('id') == "projects"){
+                $('a.top_nav_link').removeClass('selected');
+                $("#nav1").toggleClass('selected')
+            } else if($(this).attr('id') == "play"){
+                $('a.top_nav_link').removeClass('selected');
+                $("#nav2").toggleClass('selected')
+            } else if($(this).attr('id') == "blog"){
+                $('a.top_nav_link').removeClass('selected');
+                $("#nav3").toggleClass('selected')
+            } else if($(this).attr('id') == "about"){
+                $('a.top_nav_link').removeClass('selected');
+                $("#nav4").toggleClass('selected')
+            }
           }
       });
     });

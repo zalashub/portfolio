@@ -11,37 +11,23 @@
 
     <!-- Setting the viewport based on the device used. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Fonts -->
-    <!-- Montserrat -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600&display=swap" rel="stylesheet">
-    <!-- Karla -->
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
-    <!-- Work Sans -->
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600&display=swap" rel="stylesheet">
-    <!-- Muli -->
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600&display=swap" rel="stylesheet">
-    <!-- Nunito Sans -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600&display=swap" rel="stylesheet">
-
-    <!-- Jquery library Google cdn (if needed) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <title>Analogue London</title>
 
   </head>
   <body>
-    <!-- Navigation bar -->
-    <nav>
-      <div class="name"><a href="index.html">Zala S.</a></div>
-      <div class="top_nav_cont">
-        <ul class="top_nav_list">
-          <li class="top_nav_link"><a href="index.html">Projects</a></li>
-          <li class="top_nav_link"><a href="index.html#play">Play</a></li>  <!--exploration? mybe better -->
-          <li class="top_nav_link"><a href="index.html#about">About</a></li>
-        </ul>
-      </div>
-    </nav>
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
 
     <!-- Pics -->
     <main style="margin-top: 120px">
@@ -97,26 +83,16 @@
       </div>
     </main>
 
-    <footer class="footer_cont">
-      <div class="footer_title">
-        <h3>Get in touch</h3>
-      </div>
-      <div class="footer_details">
-        <ul class="social_list">
-          <li class="social_item">zala.sesko@gmail.com</li>
-          <li class="social_item"><a href="https://www.linkedin.com/in/zala-sesko/" target="_blank">linkedIn</a></li>
-          <li class="social_item"><a href="https://twitter.com/zs_rose" target="_blank">twitter</a></li>
-          <li class="social_item"><a href="https://github.com/zalashub" target="_blank">github</a></li>
-          <li class="social_item"><a href="https://the-dots.com/users/zala-sesko-905168" target="_blank">the dots</a></li>
-        </ul>
-        <div class="resume_note">
-          You can email me to receive my résumé.
-        </div>
-      </div>
-      <div class="line_break"></div>
-      <div class="copyright">
-        Zala Sesko &copy 2020
-      </div>
-    </footer>
+    <!--Footer-->
+    <div id="footer-placeholder">
+
+    </div>
+
+    <script>
+        $(function(){
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+    <!--end of footer-->
   </body>
   </html>

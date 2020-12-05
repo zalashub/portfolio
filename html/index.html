@@ -11,19 +11,6 @@
 
     <!-- Setting the viewport based on the device used. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Fonts -->
-    <!-- Poppins -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
-    <!-- Karla -->
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
-    <!-- Work Sans -->
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600&display=swap" rel="stylesheet">
-    <!-- Nunito Sans -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300&display=swap" rel="stylesheet">
-
-    <!-- Jquery library Google cdn (if needed) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- JavaScript to control the change of navbar on scroll -->
@@ -39,8 +26,9 @@
       <div class="top_nav_cont">
         <ul class="top_nav_list">
           <li><a href="#projects" class="top_nav_link" id="nav1">Projects</a></li>
-          <li><a href="#play" class="top_nav_link" id="nav2">Play</a></li>  <!--exploration? mybe better -->
-          <li><a href="#about" class="top_nav_link" id="nav3">About</a></li>
+          <li><a href="#play" class="top_nav_link" id="nav2">Play</a></li>
+          <li><a href="#blog" class="top_nav_link" id="nav3">Writings</a></li>
+          <li><a href="#about" class="top_nav_link" id="nav4">About</a></li>
         </ul>
       </div>
     </nav>
@@ -57,9 +45,9 @@
       <div class="drop_inner" id="drop_inner">
       <div class="drop" id="drop">
         <ul>
-          <li>At a research institute developing a web-app of traffic simulation & optimisation visualisation. Researching advanced methods of data-visualisation.</li>
           <li>Designing promotional material for a volunteering program at a youth-centre.</li>
           <li>An interactive data-visualisation of recent protest around the world.</li>
+          <li>Learning R</li>
         </ul>
       </div>
     </div>
@@ -249,6 +237,16 @@
       </div>
     </section>
 
+    <section id="blog">
+      <h2>Writings</h2>
+      <div class="blogBrief">Occasional ramblings about my creative journey and other topics I find interesting.</div>
+      <div class="ramblingsList">
+        <ul>
+          <li><a href="IJSinternship.html">#1 What I learned at my research internship</a></li>
+        </ul>
+      </div>
+    </section>
+
     <!-- About me title -->
     <section id="about">
     <div class="about_hero">
@@ -273,28 +271,17 @@
     </div>
     </section>
 
-    <!-- Contact section -->
-    <footer class="footer_cont">
-      <div class="footer_title">
-        <h2>Get in touch</h2>
-      </div>
-      <div class="footer_details">
-        <ul class="social_list">
-          <li class="social_item">zala.sesko@gmail.com</li>
-          <li class="social_item"><a href="https://www.linkedin.com/in/zala-sesko/" target="_blank">linkedIn</a></li>
-          <li class="social_item"><a href="https://twitter.com/zs_rose" target="_blank">twitter</a></li>
-          <li class="social_item"><a href="https://github.com/zalashub" target="_blank">github</a></li>
-          <li class="social_item"><a href="https://the-dots.com/users/zala-sesko-905168" target="_blank">the dots</a></li>
-        </ul>
-        <div class="resume_note">
-          You can email me to receive my résumé.
-        </div>
-      </div>
-      <div class="line_break"></div>
-      <div class="copyright">
-        Zala Sesko &copy 2020
-      </div>
-    </footer>
+    <!--Footer-->
+    <div id="footer-placeholder">
+
+    </div>
+
+    <script>
+        $(function(){
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+    <!--end of footer-->
   </body>
 
   <!-- Loader -->
