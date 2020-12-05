@@ -2,8 +2,12 @@
 //happens before window load!!!!!
 $(document).ready(function() {
   // Animate loader off screen
-  // $(".se-pre-con").fadeOut("slow");
-  // $("body").overflow = "hidden";
+  $(".se-pre-con").fadeOut("slow");
+  $("body").overflow = "hidden";
+
+  $(function(){
+    $("#footer-placeholder").load("footer.html");
+  }); 
 
   //display and hide the current projects
   $(".currently").on('click', function(e) {
@@ -61,6 +65,8 @@ $(document).ready(function() {
           }
       });
     });
+
+
 
 
   //Scroll Bug function
