@@ -2,8 +2,8 @@
 //happens before window load!!!!!
 $(document).ready(function() {
   // Animate loader off screen
-  $(".se-pre-con").fadeOut("slow");
-  $("body").overflow = "hidden";
+  // $(".se-pre-con").fadeOut("slow");
+  // $("body").overflow = "hidden";
 
   //display and hide the current projects
   $(".currently").on('click', function(e) {
