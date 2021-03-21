@@ -1,0 +1,75 @@
+@import 'main.css';
+
+/* Main content styling */
+main {
+    margin: 20px;
+}
+
+.project_title {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.project_brief {
+    margin: 25px auto;
+    max-width: 690px;
+    color: rgba(184, 184, 184, 0.6);
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.screenshot {
+    margin: auto;
+    text-align: center;
+}
+
+.screenshot img {
+    margin: 20px auto;
+}
+
+.play_btn {
+    text-align: center;
+    width: 15rem;
+    margin: 30px auto 10px auto;
+    padding: 10px;
+    background-color: #d14747;
+    border-radius: 25px;
+    font-size: 1.0rem;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 8.5px 10px rgba(0, 0, 0, 0.06),
+    0 12.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 11.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 20px 30px rgba(0, 0, 0, 0.12);
+}
+
+.play_btn:hover {
+    background-color: #b31a1a;
+}
+
+.play_btn a {
+    display: block;
+    letter-spacing: 1.8px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .project_title h2 {
+        margin-top: 28%;
+        font-size: 1.2rem;
+    }
+    .project_brief {
+        margin: 35px auto;
+        width: 330px;
+        font-size: 0.9rem;
+    }
+    .play_btn {
+        width: 5rem;
+        margin: 21px auto;
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+}

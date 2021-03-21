@@ -1,0 +1,67 @@
+@import 'main.css';
+
+img {
+  object-fit: cover;
+}
+
+.project_title {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.project_brief {
+  margin: 25px auto;
+  max-width: 690px;
+  color: rgba(184, 184, 184, 0.6);
+  font-size: 1.1rem;
+  text-align: center;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.gallery-cont {
+  margin: 0 7%;
+  text-align: center;
+}
+
+.asset:not(.side) {
+  margin: 60px 0;
+}
+
+.asset.wide .asset-image img {
+  display: block;
+  width: 100%;
+}
+
+.asset:not(.wide) .asset-image img {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.asset.side {
+  width: 47.5%;
+  display: inline-block;
+  /* margin: 0px 5px; */
+  padding: 0;
+}
+
+.asset.side.left {
+  margin: 0 10px 0 0;
+}
+
+.asset.side.right {
+  margin: 0 0 0 10px;
+}
+
+.asset.side .asset-image {
+  width: 100%;
+  margin: 10px;
+  padding: 0;
+}
+
+.asset.side .asset-image img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,153 @@
+@import 'main.css';
+
+/* Main content styling */
+main {
+  margin: 20px;
+}
+
+.project_title {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.project_brief {
+  margin: 25px auto;
+  max-width: 690px;
+  color: rgba(184, 184, 184, 0.6);
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.content .video_cont {
+  text-align: center;
+  width: 73%;
+  margin: auto;
+}
+
+/* .video_cont  {
+  width: 100%;
+  height: auto;
+} */
+
+.video_cont {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  padding-top: 75%; /* 4:3 Aspect Ratio */
+  border: none;
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+iframe:focus { 
+  outline: none;
+}
+
+iframe[seamless] { 
+  display: block;
+}
+
+.main_cont_flex {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main_cont_flex .content {
+  width: 42%;
+  min-width: 400px;
+  margin: 5% 0;
+  line-height: 2rem;
+  font-size: 1.10rem;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: Theano-Old-Style;
+  color: rgb(238, 238, 238);
+}
+
+.content h5 {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+  margin: 1.5rem 0;
+  font-size: 1.3rem;
+  letter-spacing: 2.3px;
+  font-family: SSP-Light;
+}
+
+.content .sub_image img {
+  width: 100%;
+  min-width: 400px;
+  max-width: 600px;
+  object-fit: contain;
+}
+
+.visit_link {
+  text-decoration: none;
+  text-align: center;
+}
+
+.visit_btn {
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.visit_link h5 {
+  text-align: center;
+  color: white;
+  margin: 30px auto 8px auto;
+  background-color: rgba(228, 0, 59, 0.89);
+  width: 17rem;
+  padding: 13px;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .project_title h2 {
+    margin-top: 28%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+  }
+  .project_brief {
+    margin: 35px auto;
+    font-size: 0.9rem;
+  }
+  .main_cont_flex {
+    margin-top: 30px;
+    align-items: center;
+    justify-items: center;
+  }
+  .main_cont_flex .content {
+    min-width: 90%;
+    margin: 5% auto;
+    font-size: 0.93rem;
+  }
+  .content h5 {
+    font-size: 0.9rem;
+    margin: 1.2rem 0;
+  }
+  .content .sub_image img {
+    width: 100%;
+    min-width: 250px;
+  }
+  .visit_link h5 {
+    margin: 20px auto 8px auto;
+    font-size: 0.8rem;
+    width: 15rem;
+    padding: 10px;
+  }
+}

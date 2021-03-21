@@ -1,0 +1,110 @@
+@import 'main.css';
+
+.line_break {
+    background-color: rgba(219, 222, 223, 0.288);
+    width: 78%;
+    margin: 50px auto;
+    height: 0.144rem;
+    border-radius: 25px;
+  }
+
+/* Main content styling */
+body {
+  margin: 20px;
+}
+
+.blog_title {
+  margin-top: 120px;
+  text-align: center;
+  font-size: 6rem;
+}
+
+.blog_title h1 {
+    font-size: 3.5rem;
+}
+
+.blog_brief {
+  margin: 25px auto;
+  max-width: 690px;
+  color: rgba(184, 184, 184, 0.6);
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.main_cont {
+  margin: 50px;
+}
+
+.textContent {
+  font-family: Theano-Old-Style;
+  font-size: 1.35rem;
+  font-weight: normal;
+  color: rgb(226, 226, 226);
+  line-height: 2.3rem;
+  /* text-align: justify; */
+  width: 64%;
+  margin: 5rem auto;
+}
+
+.textContent h2 {
+    font-family: Merriweather-Bold;
+    font-family: SSP-Light;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.textContent p::first-letter {
+    font-size: 4.25rem;
+    float: left;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 0px;
+    /* color: #FF9F1C; */
+    /* color: #5af0cf; */
+    color: #ACEDFF;
+}
+
+/* Mobile */
+@media (max-width: 780px) {
+
+    .textContent {
+      font-size: 1.1rem;
+      line-height: 2rem;
+      width: 80%;
+      margin: auto;
+    }
+
+  }
+
+  /* Mobile */
+  @media (max-width: 480px) {
+
+    .blog_title {
+      margin: 24% auto 20px auto;
+      width: 93%;
+    }
+    .blog_title h1 {
+        font-size: 2rem;
+    }
+    .blog_brief {
+        margin: 35px auto;
+        width: 93%;
+        font-size: 1.0rem;
+    }
+    .main_cont {
+      margin: 5px;
+      margin-bottom: 0;
+    }
+    .textContent {
+      font-size: 1.2rem;
+      line-height: 2rem;
+      width: 85%;
+      margin: auto;
+    }
+    .textContent h2 {
+        font-size: 1.82rem;
+    }
+
+  } 
