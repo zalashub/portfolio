@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("html");
   eleventyConfig.addPassthroughCopy("_redirects");
+  eleventyConfig.htmlTemplateEngine = "ejs"
   return {
     passthroughFileCopy: true,
   };
