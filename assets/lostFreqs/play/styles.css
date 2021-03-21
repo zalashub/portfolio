@@ -1,0 +1,91 @@
+/*css for the project*/
+body {
+    background-color: rgb(20, 20, 20);
+    padding: 0;
+} 
+h1{
+    text-align: center; 
+    font-family: "Courier New", Courier, monospace; 
+    font-size: 42px; 
+    font-weight: normal; 
+    color: white;
+}
+
+/*positions the canvas so to moves relative to window*/
+canvas{
+    position:absolute;
+    left:50%;
+    margin-left:-400px;
+}
+ 
+/*buttons in left top corner*/
+.top-buttons{
+    position:absolute;
+    z-index: 1;
+    padding-left: 0px;
+    display:grid;
+    left:50%;
+    margin-left:-400px;
+    
+}
+
+/*buttons in right bottom corner*/
+.bottom-buttons{
+    position:absolute;
+    z-index:1;
+    padding-left:0px;
+    display:grid;
+    right:50%;
+    margin-right:-400px;
+    top:600px;
+   
+}
+
+/*close button for popups*/
+.close-button{
+    position:absolute;
+    z-index:1;
+    padding-left:0px;
+    display:grid;
+    left:50%;
+    margin-left:150px;
+    top:280px;
+}
+
+/*none of the buttons are visible on first scene*/
+#close{
+    display:none;
+    cursor: pointer;
+}
+
+#cameraButton{
+    display:none;
+    cursor:pointer;
+}
+#questionButton{
+    display:none;
+    cursor: pointer;
+}
+#globeButton{
+    display:none;
+    cursor: pointer;
+}
+
+/*css for the click to see pfd*/
+p{
+    position:absolute;
+    z-index:1; 
+    color:black; 
+    left:50%;
+    margin-left:-95px;
+    top:560px;
+    display:none;
+    font-family:'share Tech Mono', monospace;
+    font-size:14px;
+    font-weight:bold;
+    cursor: pointer;
+       
+}
+p:hover{
+    color:white;
+}

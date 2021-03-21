@@ -1,0 +1,112 @@
+@import 'main.css';
+
+/* Main content styling */
+main {
+    margin: 20px;
+}
+
+.project_title {
+    margin-top: 120px;
+    text-align: center;
+}
+  
+.project_brief {
+    margin: 25px auto;
+    max-width: 690px;
+    color: rgba(184, 184, 184, 0.6);
+    font-size: 1.1rem;
+    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.main_cont {
+    margin: 50px;
+}
+
+.main_cont img {
+    display: block;
+    width: 100%;
+}
+
+.pages {
+    display: grid;
+    column-count: 2;
+    gap: 20px 20px;
+    align-items: start;
+    justify-items: center;
+    justify-content: center;
+}
+
+.pages .full {
+    grid-column-end: span 2;
+}
+
+.view_btn {
+    /* float: left; */
+    width: 18rem;
+    text-align: center;
+    padding: 13px;
+    margin: 50px auto;
+    height: 3rem;
+    background-color: rgb(248, 118, 205);
+    /* background-color: black; */
+    background-color: rgb(86, 201, 221);
+    font-size: 1.2rem;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 8.5px 10px rgba(0, 0, 0, 0.06),
+    0 12.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 11.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 20px 30px rgba(0, 0, 0, 0.12);
+}
+
+.view_btn:hover {
+    background-color: rgb(75, 164, 180);
+}
+
+.view_btn a {
+    display: block;
+    letter-spacing: 1.8px;
+    color: white;
+    text-decoration: none;
+}
+
+.pdfemb iframe {
+    display: block;
+    margin: auto;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .project_title h2 {
+      margin-top: 28%;
+      font-size: 1.2rem;
+    }
+    .project_brief {
+      margin: 35px auto;
+      width: 93%;
+      font-size: 0.8rem;
+    }
+    .main_cont {
+      margin: 0px;
+    }
+    .view_btn {
+      width: 8rem;
+      margin: 21px auto;
+      margin-bottom: 0;
+      padding: 10px;
+      font-size: 0.7rem;
+    }
+    .pages {
+        column-count: 1;
+        align-items: start;
+    }
+    .pages .full {
+        grid-column-end: span 1;
+    }
+    .main_cont img {
+        width: 80%;
+    }
+  }
