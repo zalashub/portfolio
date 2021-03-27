@@ -90,7 +90,7 @@ nav {
     display: inline;
     float: left;
     padding: 5.15px 25px;
-    margin: 16px 10px;
+    margin: 16px 0px 16px 3px;
     font-size: 1.38rem;
   }
   
@@ -103,7 +103,7 @@ nav {
   .top_nav_cont {
     float: right;
     padding: 7px;
-    margin: 12px 0px 13px 0px;
+    margin: 12px 7px 13px 0px;
     font-size: 1.1rem;
   }
   

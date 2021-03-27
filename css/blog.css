@@ -9,7 +9,7 @@
   }
 
 /* Main content styling */
-body {
+main {
   margin: 20px;
 }
 
@@ -20,10 +20,10 @@ body {
 }
 
 .blog_title h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
-.blog_brief {
+.blog_brief h4 {
   margin: 25px auto;
   max-width: 690px;
   color: rgba(184, 184, 184, 0.6);
