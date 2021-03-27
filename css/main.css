@@ -103,13 +103,15 @@ nav {
   .top_nav_cont {
     float: right;
     padding: 7px;
-    margin: 12px 18px 13px 3px;
+    margin: 12px 0px 13px 0px;
     font-size: 1.1rem;
   }
   
   .top_nav_list {
     display: inline;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
   
   .top_nav_list li {
@@ -218,27 +220,26 @@ nav {
     .top_nav_list a {
       font-size: 0.93rem;
     }
-    
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 520px) {
     .name {
-      font-size: 1.01rem;
-      padding: 5.15px 0px 5.15px 10px;
-      margin: 16px 0px 16px 9px;
+      font-size: 0.91rem;
+      padding: 2px 3px 5.15px 14px;
+      margin: 16px 0px 16px 4px;
     }
     .top_nav_cont {
-      padding: 6px 6px 6px 0px;
-      margin: 12px 7px 12px 0px;
+      padding: 1px 6px 6px 0px;
+      margin: 12px 5px 12px 0px;
     }
     .top_nav_list li {
       padding: 0 0px;
-      margin: 0 6px;
+      margin: 0 0px;
       padding-bottom: 5px;
     }
     .top_nav_list a {
-      font-size: 0.83rem;
-      padding: 5px 2px;
+      font-size: 0.91rem;
+      padding: 5px 5px;
     }
     .resume_note {
       font-size: 0.60rem;
@@ -255,6 +256,27 @@ nav {
     }
     .footer_title h2, h3 {
       font-size: 1.0rem;
+    }
+  }
+
+  @media (max-width: 385px) {
+    .name {
+      font-size: 0.75rem;
+      padding: 2px 2px 5.15px 6px;
+      margin: 17px 0px 12px 5px;
+    }
+    .top_nav_cont {
+      padding: 1px 6px 6px 0px;
+      margin: 12px 7px 12px 0px;
+    }
+    .top_nav_list li {
+      padding: 0 0px;
+      margin: 0 0px;
+      padding-bottom: 5px;
+    }
+    .top_nav_list a {
+      font-size: 0.80rem;
+      padding: 5px 5px 5px 0px;
     }
   }
   
