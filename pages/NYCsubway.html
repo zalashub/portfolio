@@ -54,7 +54,7 @@
 
     <!-- Info about entrances and stations -->
     <div class='stationInfo' id="stationInfo">
-        <div class="imageWrapper"><img src="../assets/nycSubwayViz/SubwayIcon.png" alt="" width="70px"></div>
+        <div class="imageWrapper"><img src="../../assets/nycSubwayViz/SubwayIcon.png" alt="" width="70px"></div>
         <div>Station Name: <span id='stationName'></span></div>
         <br>
         <div>Lines running through: <span id='stationLines'></span></div>
@@ -227,7 +227,7 @@
         //unclustered stations with nyc icon layer
         map.loadImage(
             // './nycSubwaySign.png',
-            '../assets/nycSubwayViz/SubwayIcon.png',
+            '../../assets/nycSubwayViz/SubwayIcon.png',
             function (error, image) {
                 if (error) throw error;
                 map.addImage('subwaySign', image);
