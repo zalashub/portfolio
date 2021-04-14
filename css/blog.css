@@ -29,6 +29,7 @@ main {
   color: rgba(184, 184, 184, 0.6);
   font-size: 1.1rem;
   text-align: center;
+  line-height: 1.65rem;
 }
 
 .main_cont {
@@ -44,26 +45,56 @@ main {
   /* text-align: justify; */
   width: 64%;
   margin: 5rem auto;
+  text-align: justify;
 }
 
 .textContent h2 {
     font-family: Merriweather-Bold;
     font-family: SSP-Light;
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.75rem;
     margin-top: 2rem;
 }
 
+.textContent h5 {
+  font-size: 1.35rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
 .textContent p::first-letter {
-    font-size: 4.25rem;
-    float: left;
-    line-height: 60px;
-    padding-top: 4px;
-    padding-right: 8px;
-    padding-left: 0px;
-    /* color: #FF9F1C; */
-    /* color: #5af0cf; */
-    color: #ACEDFF;
+  font-size: 4.25rem;
+  float: left;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 0px;
+  /* color: #FF9F1C; */
+  /* color: #5af0cf; */
+  color: #ACEDFF;
+}
+
+.imgCont {
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.imgCont img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.resources {
+  font-size: 0.88rem;
+  overflow: scroll;
+  color: #cecece;
+}
+
+.resources ol {
+  margin: auto;
+  list-style-type: none;
+  padding: 0;
 }
 
 /* Mobile */

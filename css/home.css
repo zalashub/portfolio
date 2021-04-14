@@ -356,6 +356,10 @@
   padding: 0;
 }
 
+.ramblingsList li {
+  margin: 0.75rem;
+}
+
 .ramblingsList a {
   text-decoration: none;
   color: white;
