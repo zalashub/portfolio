@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "dev": "npx @11ty/eleventy --serve",
-    "start": "npx @11ty/eleventy --serve"
+    "watch:sass": "npx sass sass:_site/css --watch",
+    "build:sass": "npx sass sass:_site/css",
+    "dev": "npm run watch:sass & npx @11ty/eleventy --serve",
+    "start": "npm run watch:sass & npx @11ty/eleventy --serve",
+    "build": "npm run build:sass & npx @11ty/eleventy"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +18,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-upgrade-help": "^2.0.5",
-    "ejs": "^3.1.6"
+    "ejs": "^3.1.6",
+    "sass": "^1.77.6"
   }
 }

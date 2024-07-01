@@ -1,4 +1,16 @@
 @font-face {
+	font-family: Apercu Mono;
+	src: url('/Apercu Mono.woff2') format('woff2');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Apercu Regular;
+	src: url('/Apercu Regular.woff2') format('woff2');
+	font-display: swap;
+}
+
+@font-face {
   font-family: Bitter;
   src: url(../assets/fonts/Bitter/Bitter-VariableFont_wght.ttf);
 }

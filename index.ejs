@@ -1,387 +1,73 @@
 ---
-layout: _base-layout.ejs
+<!-- layout: _base-layout.ejs -->
 faviconApple: favicon_io/apple-touch-icon.png
 favicon32: favicon_io/favicon-32x32.png
 favicon16: favicon_io/favicon-16x16.png
 faviconManifest: favicon_io/site.webmanifest
-cssLink: css/home.css
+cssLink: css/cover.css
 pageTitle: Home
 short_description: Zala Šeško's portfolio
 jsLink: js/home.js
 ---
 
-<!-- Hello and introduction -->
-<div class="hero_text">
-  <h1>Hi! I'm Zala.</h1>
-    <h2>As a Creative Developer, my practice lies at the intersection of technology and the arts, combining both 
-      to deliver meaningful experiences with a storytelling edge. Welcome to my old, not yet up-to-date portfolio from my time at university. Enjoy! (portfolio updates are in the works)</h2>
-</div>
+<meta charset="utf-8">
 
-<!-- <div class="currently">
-  <p><span id="trig">&#x25BC;</span> &nbsp; What my days are currently filled with</p>
-  <div class="drop_inner" id="drop_inner">
-  <div class="drop" id="drop">
-    <ul>
-      <li>3D modelling and WebGL exploration</li>
-      <li>Visual journalism @ the Guardian</li>
-    </ul>
-  </div>
-</div>
-</div> -->
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="<%- faviconApple %>">
+<link rel="icon" type="image/png" sizes="32x32" href="<%- favicon32 %>">
+<link rel="icon" type="image/png" sizes="16x16" href="<%- favicon16 %>">
+<link rel="manifest" href="<%- faviconManifest %>">
 
-<!-- Main contents of the page - project boxes -->
-<section id="projects" class="projects_cont">
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="stylesheet" href="<%- cssLink %>">
 
+<!-- Extra info about the page. -->
+<meta name="description" content="My personal portfolio website.">
+<meta name="keywords" content="portfolio, artist, 3d artist, data visualisation, data journalism, creative coding, creative technologist, creative developer, web developer">
+<meta name="author" content="Zala Sesko">
 
-  <!-- University final project -->
-  <a class="project" href="https://the-unk-machine.vercel.app/" alt='' target="_blank">
-    <div class="project_img_outer">
-      <div class="project_img_inner" style="background-image:url('assets/finalprojectprew.png')"></div>
-    </div>
-    <div class="project_detail">
-      <div class="project_title">
-        <h3>the &#60;unk&#62; machine - Final Year Project </h3>
-      </div>
-      <div class="project_filter">
-        Interactive Graphics, Machine Learning, Web Scraping, 3D Modelling and Animation, Creative Coding, Three.js, Pytorch, GSAP, Blender
-      </div>
-      <div class="project_brief">
-        The &#60;unk&#62; machine is a transdisciplinary project, situated in the field of computational co-creativity, automated story generation and immersive creative computing media.
-        It explores the use of machine learning technologies in the context of human-computer creative collaboration to produce a piece of creative writing. 
-        It then builds upon the created story by creating a 3D immersive interactive experience, which represents a new form of digital storytelling. 
-        <br>
-         
-      </div>
-    </div> 
-  </a>
+<!-- Setting the viewport based on the device used. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Zala Š. | <%- pageTitle %> </title>
 
 
-  <!-- News runner -->
-  <a class="project" href="https://youtu.be/S5coYewzCTs" alt='' target="_blank">
-    <div class="project_img_outer">
-      <div class="project_img_inner" style="background-image:url('assets/newsRunner.png')"></div>
-    </div>
-    <div class="project_detail">
-      <div class="project_title">
-        <h3>News Runner</h3>
-      </div>
-      <div class="project_filter">
-        Machine Learning, 3D modelling, Creative Coding, Three.js, ml5.js, GSAP, NYT API, Blender
-      </div>
-      <div class="project_brief">
-        An interactive 3D experience, portraying the overwhelming amount of news delivered to a person every second.
-        Using charRNN to generate news headlines and a hand detection model, enabling the viewer to fight them off.
-      </div>
-    </div>
-  </a>
+<main>
 
-  <!-- ML Experiments -->
-  <a class="project" href="https://github.com/zalashub/machine-learning-experiments" alt='' target="_blank">
-    <div class="project_img_outer">
-      <div class="project_img_inner" style="background-image:url('assets/ml_experiments.jpg')"></div>
-    </div>
-    <div class="project_detail">
-      <div class="project_title">
-        <h3>Machine Learning Sketches</h3>
-      </div>
-      <div class="project_filter">
-        Machine Learning, Creative Coding, ml5.js
-      </div>
-      <div class="project_brief">
-        A collection of weekly creative machine learning experiments done through a course at university.
-      </div>
-    </div>
-  </a>
+    <div class="cover">
+        <div class="cover__content">
 
-  <!-- MB Style Transfer -->
-  <a class="project" href="https://www.youtube.com/watch?v=B35SAXBQPPo" alt='' target="_blank">
-    <div class="project_img_outer">
-      <div class="project_img_inner" style="background-image:url('assets/mb_style_transfer.png')"></div>
-    </div>
-    <div class="project_detail">
-      <div class="project_title">
-        <h3>Maribor Neural Style Transfer</h3>
-      </div>
-      <div class="project_filter">
-        Machine Learning, Creative Coding, tensorflow.js
-      </div>
-      <div class="project_brief">
-        Video of my hometown with applied style transfer. The ML model was trained on an image generated by a GAN model based on a propmpt 'Slovenia'.
-      </div>
-    </div>
-  </a>
+            <div class="cover__title">
+                WORK IN PROGRESS...
+            </div>
 
-  <!-- Queer Kids' TV shows-->
-  <a class="project" href="assets/queerTV.pdf" alt='' target="_blank">
-    <div class="project_img_outer">
-      <div class="project_img_inner" style="background-image:url('assets/queerTV.jpg')"></div>
-    </div>
-    <div class="project_detail">
-      <div class="project_title">
-        <h3>Queer representation in Children's TV</h3>
-      </div>
-      <div class="project_filter">
-        Data Visualisation, Web Scraping, Python
-      </div>
-      <div class="project_brief">
-        A data visualisation analysis of LGBTQIA+ characters in US Children's TV Shows.
-      </div>
-    </div>
-  </a>
+            <div class="cover__subtitle">
+                <div class="cover__subtitle__name">ZALA ŠEŠKO</div>
+                <div class="cover__subtitle__role">CREATIVE DEVELOPER</div>
+            </div>
+            
+        </div>
 
+        <div class="cover__footer">
 
-  <!-- The Guardian -->
-  <a class="project" href="https://www.theguardian.com/profile/zala-sesko" alt='The Guardian' target="_blank">
-    <div class="project_img_outer">
-      <div class="project_img_inner" style="background-image:url('assets/theGuardian.jpg')"></div>
-    </div>
-    <div class="project_detail">
-      <div class="project_title">
-        <h3>My contributions at the Guardian</h3>
-      </div>
-      <div class="project_filter">
-        Data visualisation, Graphic Design, Visual Journalism, D3.js
-      </div>
-    </div>
-  </a>
+            <ul class="cover__footer__list">
+                <!-- <li class="cover__footer__item">
+                  <a href="mailto: zala.dev.space@gmail.com">email</a>
+                </li> -->
+                <li class="cover__footer__item">
+                  <a href="https://www.linkedin.com/in/zala-sesko/" target="_blank">LINKEDIN</a>
+                </li>
+                <li class="cover__footer__item">
+                  <a href="https://github.com/zalashub" target="_blank">GITHUB</a>
+                </li>
+                <li class="cover__footer__item">
+                  <a href="https://twitter.com/zalashub" target="_blank">TWITTER</a>
+                </li>
+              </ul>
 
-  <!-- Disinformed -->
-  <a class="project" href="https://www.youtube.com/watch?v=ayQLCL7o45U" alt='Disinformed project video link' target="_blank">
-    <div class="project_img_outer">
-      <div class="project_img_inner" style="background-image:url('assets/disinformed02.png')"></div>
+        </div>
+        
     </div>
-    <div class="project_detail">
-      <div class="project_title">
-        <h3>Disinformed</h3>
-      </div>
-      <div class="project_filter">
-        Data visualisation, Creative Coding, Computer Vision
-      </div>
-      <div class="project_brief">
-        An interactive data visualisation piece of disinformation about COVID-19 using openframeworks and Leap Motion. My second year final project at university. 
-      </div>
-    </div>
-  </a>
 
-
-  <!-- Lost Frequencies -->
-  <a class="project" href="pages/lostFreqs" alt=''>
-    <div class="project_img_outer">
-      <div class="project_img_inner" style="background-image:url('assets/lostFreqs/lostFreqs.png')"></div>
-    </div>
-    <div class="project_detail">
-      <div class="project_title">
-        <h3>Lost Frequencies</h3>
-      </div>
-      <div class="project_filter">
-        Creative Coding, Computer Vision
-      </div>
-      <div class="project_brief">
-        An interactive web-based program representing a speculative reality, exploring the sound-color relationship in relation to computer vision.
-        First year final project.
-      </div>
-    </div>
-  </a>
-
-    
-  <!-- LGBT Dataviz -->
-  <a class="project" href="pages/LGBTdataVis" alt=''>
-    <div class="project_img_outer">
-      <div class="project_img_inner" style="background-image:url('assets/lgbtGAI/cover.png')"></div>
-    </div>
-    <div class="project_detail">
-      <div class="project_title">
-        <h3>LGBT Acceptance Across the World</h3>
-      </div>
-      <div class="project_filter">
-        Data Visualisation, d3.js
-      </div>
-      <div class="project_brief">
-        A data visualisation of LGBT Acceptance Indices of 174 countries.
-      </div>
-    </div>
-  </a>  
-
-  <!-- Markov -->
-  <a class="project" href="https://github.com/zalashub/markov-generator" alt='Markov Generator Link' target="_blank">
-    <div class="project_img_outer">
-      <div class="project_img_inner" style="background-image:url('assets/markov/markovTweets2.png')"></div>
-    </div>
-    <div class="project_detail">
-      <div class="project_title">
-        <h3>Markov Chain Bot</h3>
-      </div>
-      <div class="project_filter">
-        Creative Coding, Language Processing
-      </div>
-      <div class="project_brief">
-        A command line C++ application generating text based on input files utilising Markov Chains of n-th order.
-      </div>
-    </div>
-  </a>
-
-  <!-- NYC -->
-  <a class="project" href="pages/nycSubwayViz" alt=''>
-    <div class="project_img_outer">
-      <div class="project_img_inner" style="background-image:url('assets/nycSubwayViz/nycViz.png')"></div>
-    </div>
-    <div class="project_detail">
-      <div class="project_title">
-        <h3>How close are NYC subway entrances to stations?</h3>
-      </div>
-      <div class="project_filter">
-        Data Visualisation, Mapbox GL JS
-      </div>
-      <div class="project_brief">
-        An interactive geospatial visualisation of subway entrances in relation to the stations in New York City.
-      </div>
-    </div>
-  </a>
-
-   <!-- Calorie Buddy -->
-  <a class="project" href="https://github.com/zalashub/calorieBuddy" alt='' target="_blank">
-    <div class="project_img_outer">
-      <div class="project_img_inner" style="background-image:url('assets/calorieBuddy01.png')"></div>
-    </div>
-    <div class="project_detail">
-      <div class="project_title">
-        <h3>Dynamic Web App - Calorie Buddy</h3>
-      </div>
-      <div class="project_filter">
-        Full-stack development, Node.js, MongoDB
-      </div>
-      <div class="project_brief">
-        A dynamic web application built with Node.js, with the database management system being MongoDB. Includes advanced API.
-        Made during a university course on Databases and the Web.
-      </div>
-    </div>
-  </a>
-
-  <!-- Illusion sketches -->
-  <a class="project" href="https://zalashub.github.io/illusion-sketches/" alt='Illusion sketches project link' target="blank">
-    <div class="project_img_outer">
-      <div class="project_img_inner" style="background-image:url('assets/illusion-sketches.jpg')"></div>
-    </div>
-    <div class="project_detail">
-      <div class="project_title">
-        <h3>Illusion sketches</h3>
-      </div>
-      <div class="project_filter">
-        p5.js, Creative Coding
-      </div>
-      <div class="project_brief">
-        An interactive web-based app, demonstrating various optical illusions and providing educational content about them. 
-        Made in my second year university module Perception and Multimedia Computing.
-      </div>
-    </div>
-  </a>
-
-
-  <!-- Astronaut -->
-  <a class="project" href="pages/astronaut" alt=''>
-    <div class="project_img_outer">
-      <div class="project_img_inner" style="background-image:url('assets/astronaut/hero.jpg')"></div>
-    </div>
-    <div class="project_detail">
-      <div class="project_title">
-        <h3>Platformer Game</h3>
-      </div>
-      <div class="project_filter">
-        p5.js, Creative Coding
-      </div>
-      <div class="project_brief">
-        Using p5.js to develop a simple 2D platformer game.
-      </div>
-    </div>
-  </a>
-
-
-  <div class="project" alt=''>
-    <div class="project_detail">
-      <div class="project_title">
-        <h3>This website</h3>
-      </div>
-      <div class="project_filter">
-        Front-end web development
-        <br> 
-        (HTML/CSS/JS/Eleventy)
-      </div>
-      <div class="project_brief">
-        (which sincerely needs a rewamp when time alows it, as it was created in early 2020)
-      </div>
-    </div>
-  </div>
-
-  </section>
 </main>
-
-<section id="play">
-  <h2>Gallery 1.0.</h2>
-  <div class="galleryBrief">Explore my collection of creative experiments realised with code.</div>
-  <div class="play_cont">
-    <img loading=lazy src="assets/play/briansBrainTiny.gif" alt="">
-    <img loading=lazy src="assets/play/vintageCompArtTiny.gif" alt="">
-    <img loading=lazy src="assets/play/L_SystemTrees.png" alt="">
-    <img loading=lazy src="assets/play/irregularGrid01tiny.gif" alt="">
-  </div>
-</section>
-
-<!-- <section id="writings">
-  <h2>Writings.</h2>
-  <div class="writingsBrief">Occasional ramblings about my creative journey and other topics I find interesting.</div>
-  <div class="ramblingsList">
-    <ul>
-      <li><a href="pages/IJSinternship">#1 What I learned at my research internship</a></li>
-      <li><a href="pages/mobilityVizBlog">#2 Advanced visualization methods of urban mobility</a></li>
-    </ul>
-  </div>
-</section> -->
-
-<section id="cgi">
-  <h2>Gallery 2.0.</h2>
-  <div class="galleryBrief">A collection of my CGI endeavours.</div>
-  <div class="play_cont_02">
-    
-    <img loading=lazy src="assets/cgi/jungleRoomPNG.png" alt="">
-    <img loading=lazy src="assets/cgi/sandyPNG.png" alt="">
-    <img loading=lazy src="assets/cgi/cloudRoomJPG.jpg" alt="">
-    <img loading=lazy id="wideIMG" src="assets/cgi/mountain.png" alt="">
-    <img loading=lazy src="assets/cgi/roomAbstract.jpg" alt="">
-    <img loading=lazy src="assets/cgi/lightanim.gif" alt="">
-    <img loading=lazy src="assets/cgi/bendyPNG.png" alt="">
-    <img loading=lazy src="assets/cgi/rocketanim.gif" alt="">
-    <img loading=lazy src="assets/cgi/goldHandRenderPNG.png" alt="">
-    <img loading=lazy src="assets/cgi/whalePoster.png" alt="">
-    <img loading=lazy src="assets/cgi/bendyAbstractJPG.jpg" alt="">
-
-  </div>
-</section>
-
-<!-- About me title -->
-<section id="about">
-<div class="about_hero">
-  <h1>About me.</h1>
-</div>
-
-<div class="about_cont">
-  <div class="about_text">
-    Constantly exploring the vast field of creative development through learning by doing, 
-    I aim to deliver meaningful experiences whilst finding new ways to engage with emerging technologies. 
-    <br><br>
-    I'm always on the lookout for a new challenge, a new idea and new knowledge, 
-    whether that be in Immersive Experiences, Machine Learning, 3D Modelling, 
-    Extended Reality, or something else yet unexplored. 
-    <!-- <br><br> -->
-    <!-- Above all I'm an avid supporter of self-sustainability, the discourse of social issues and personal development.  -->
-    <!-- I am currently based in London.  -->
-  </div>
-  <div class="about_illustration">
-    <img loading=lazy src="assets/mylogo.svg" alt="">
-  </div>
-</div>
-</section>
-
-<!-- Loader -->
-<div class="se-pre-con">
-<img src="assets/loaders/mainLoader.svg" alt="">
-</div>
