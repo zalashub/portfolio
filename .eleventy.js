@@ -6,6 +6,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("favicon_io");
   eleventyConfig.htmlTemplateEngine = "ejs"
+
   return {
     passthroughFileCopy: true,
   };
