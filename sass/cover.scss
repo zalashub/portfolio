@@ -3,6 +3,7 @@
 .cover {
     background: rgb(94 105 126);  /* fallback for old browsers */
     background: linear-gradient(to right, rgb(94 105 126), #0d0d0d);
+    background: linear-gradient(to right, rgb(183 166 181), #20274a);
 
     &__overlay {
         background: url('/assets/noise.jpg');
@@ -76,10 +77,6 @@
                 transition: color 0.25s ease-in-out;
             }
         }
-
-        &__item:hover a {
-            color: #fff;
-        }
     }
 
     &__decorator {
@@ -90,15 +87,13 @@
             width: 0.25rem;
             height: 5rem;
             // border-radius: 0.5rem;
-            background-color: #cccccc;
         }
 
         &__dot {
             margin-top: 0.35rem;
             width: 0.25rem;
             height: 0.25rem;
-            border-radius: 1rem;
-            background-color: #cccccc;
+            // border-radius: 1rem;
 
             // displace the second dot
             &:nth-child(2) {

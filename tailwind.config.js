@@ -37,7 +37,11 @@ module.exports = {
       160: '10rem',
 			240: '15rem'
     },
-    extend: {},
+    extend: {
+      colors: {
+        'main-orange': 'rgb(255 205 18)'
+      },
+    },
   },
   plugins: [],
 }
