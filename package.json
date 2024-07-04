@@ -10,13 +10,15 @@
     "build:tailwind": "npx tailwindcss -i ./css/global.css -o _site/output.css --minify",
     "dev": "npm run watch:sass & npm run dev:tailwind & npx @11ty/eleventy --serve",
     "start": "npm run watch:sass & npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy & npm run build:tailwind & npm run build:sass"
+    "build": "npx @11ty/eleventy & npm run build:tailwind & npm run build:sass",
+    "prod": "concurrently \"npx @11ty/eleventy\" \"npx tailwindcss -i ./css/global.css -o _site/output.css --minify\" \"npx sass sass:_site/css\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "concurrently": "^8.2.2",
     "tailwindcss": "^3.4.4"
   },
   "dependencies": {
