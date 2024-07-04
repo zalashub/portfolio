@@ -23,17 +23,15 @@
         right: 0%;
         text-align: end;
         padding: 0rem;
-        font-size: 0.8rem;
         font-family: 'Apercu Regular';
         margin: 1.8rem 2.5rem 0 0;
     }
 
     &__date {
         position: absolute;
-        font-size: 0.8rem;
         font-family: 'Apercu Regular';
         transform: translateY(-50%) rotateZ(-90deg);
-        top: 50%;
+        top: 75%;
         left: 0;
         margin-left: 0.4rem;
         padding: 0;
@@ -44,10 +42,16 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        
+        margin: 0;
+        padding: 0;
+
         text-align: center;
     
         font-family: 'Apercu Mono';
+    }
+
+    &__title {
+        font-family: 'Maderon';
     }
 
     &__footer {
