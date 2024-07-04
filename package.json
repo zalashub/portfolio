@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "ejs": "^3.1.6",
-    "sass": "^1.77.6"
+    "sass": "^1.77.6",
+    "tailwindcss": "^3.4.4"
   }
 }
