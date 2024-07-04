@@ -6,8 +6,8 @@
   "scripts": {
     "watch:sass": "npx sass sass:_site/css --watch",
     "build:sass": "npx sass sass:_site/css",
-    "dev:tailwind": "npx tailwind -i ./css/global.css -o _site/css/output.css --watch",
-    "build:tailwind": "npx tailwind -i ./css/global.css -o _site/css/output.css --minify",
+    "dev:tailwind": "npx tailwindcss -i ./css/global.css -o _site/css/output.css --watch",
+    "build:tailwind": "npx tailwindcss -i ./css/global.css -o _site/css/output.css --minify",
     "dev": "npm run watch:sass & npm run dev:tailwind & npx @11ty/eleventy --serve",
     "start": "npm run watch:sass & npx @11ty/eleventy --serve",
     "build": "npm run build:tailwind & npm run build:sass & npx @11ty/eleventy"
