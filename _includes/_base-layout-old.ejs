@@ -4,8 +4,14 @@
     <%- include('/_head.ejs') -%>
   </head>
   <body>
+    <%- include('/_header.ejs') -%>
     <main><%- content %></main>
+    <%- include('/_footer.ejs') -%>
+
     <!-- Jquery library Google cdn (if needed) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- JavaScript to control the change of navbar on scroll -->
+    <script src="<%- jsLink %>"></script>
   </body>
 </html>

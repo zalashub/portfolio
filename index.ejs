@@ -1,5 +1,5 @@
 ---
-<!-- layout: _base-layout.ejs -->
+layout: _base-layout.ejs
 faviconApple: favicon_io/apple-touch-icon.png
 favicon32: favicon_io/favicon-32x32.png
 favicon16: favicon_io/favicon-16x16.png
@@ -10,36 +10,11 @@ short_description: Zala Šeško's portfolio
 <!-- jsLink: js/cover.js -->
 ---
 
-<meta charset="utf-8">
-
-<!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="<%- faviconApple %>">
-<link rel="icon" type="image/png" sizes="32x32" href="<%- favicon32 %>">
-<link rel="icon" type="image/png" sizes="16x16" href="<%- favicon16 %>">
-<link rel="manifest" href="<%- faviconManifest %>">
-
-<!-- Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-<link rel="stylesheet" href="<%- cssLink %>">
-
-<!-- Extra info about the page. -->
-<meta name="description" content="My personal portfolio website.">
-<meta name="keywords" content="portfolio, artist, 3d artist, data visualisation, data journalism, creative coding, creative technologist, creative developer, web developer">
-<meta name="author" content="Zala Sesko">
-
-<!-- Setting the viewport based on the device used. -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Zala Š. | <%- pageTitle %> </title>
-
-
-<main>
-
-    <div class="cover">
+    <div class="cover absolute top-0 left-0 w-full h-full">
         <div class="cover__overlay"></div>
 
-        <div class="cover__top">TBA - 001</div>
-        <div class="cover__date">07 - 2024</div>
+        <div class="cover__top text-zinc-300">TBA - 001</div>
+        <div class="cover__date text-zinc-300">07 - 2024</div>
 
         <div class="cover__decorator cover__decorator__top">
             <div class="cover__decorator__line"></div>
@@ -55,23 +30,20 @@ short_description: Zala Šeško's portfolio
 
         <div class="cover__content">
 
-            <div class="cover__title">
+            <div class="cover__title text-white text-xl sm:text-3xl md:text-48 mb-20">
                 WORK IN PROGRESS...
             </div>
 
-            <div class="cover__subtitle">
-                <div class="cover__subtitle__name">ZALA ŠEŠKO</div>
-                <div class="cover__subtitle__role">CREATIVE DEVELOPER</div>
+            <div>
+                <div class="text-16 md:text-base text-white font-bold mb-2">ZALA ŠEŠKO</div>
+                <div class="text-zinc-400 text-xs sm:text-sm">CREATIVE DEVELOPER</div>
             </div>
             
         </div>
 
         <div class="cover__footer">
 
-            <ul class="cover__footer__list">
-                <!-- <li class="cover__footer__item">
-                  <a href="mailto: zala.dev.space@gmail.com">email</a>
-                </li> -->
+            <ul class="cover__footer__list text-xs sm:text-sm flex flex-col gap-y-1 gap-x-5 sm:flex-row text-zinc-400">
                 <li class="cover__footer__item">
                   <a href="https://www.linkedin.com/in/zala-sesko/" target="_blank">LINKEDIN</a>
                 </li>
@@ -86,5 +58,3 @@ short_description: Zala Šeško's portfolio
         </div>
         
     </div>
-
-</main>
